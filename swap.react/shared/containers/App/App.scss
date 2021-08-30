@@ -1,0 +1,24 @@
+.main {
+  position: relative;
+  z-index: 1;
+  padding-bottom: 55px;
+
+  main {
+    margin-top: 88px;
+  }
+}
+
+@include media-mobile {
+	.main {
+    padding-bottom: 30px;
+
+    margin-top: 0;
+    margin-bottom: 80px;
+
+    main {
+      margin-top: 0;
+      margin-bottom: 80px;
+    }
+
+	}
+}

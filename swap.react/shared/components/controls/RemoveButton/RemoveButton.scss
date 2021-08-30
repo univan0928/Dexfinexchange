@@ -1,0 +1,30 @@
+.removeButton {
+  width: 40px;
+  height: 40px;
+  background: #e91db4 url('./images/delete.svg') 50% 50% no-repeat;
+  background-size: 16px;
+  cursor: pointer;
+  @include inline-block;
+  opacity: 0.5;
+  border-radius: 50%;
+  line-height: 36px;
+  border: none;
+  text-align: center;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.icon {
+  height: 16px;
+}
+
+@include media-mobile {
+  .removeButton {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
